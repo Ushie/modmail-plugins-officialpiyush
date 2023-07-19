@@ -283,5 +283,5 @@ class ModerationPlugin(commands.Cog):
         return embed
 
 
-def setup(bot):
-    bot.add_cog(ModerationPlugin(bot))
+async def setup(bot):
+    await bot.add_cog(ModerationPlugin(bot))

@@ -57,5 +57,5 @@ class DmOnJoinPlugin(commands.Cog):
             print("Posted to plugin API")
 
 
-def setup(bot):
-    bot.add_cog(DmOnJoinPlugin(bot))
+async def setup(bot):
+    await bot.add_cog(DmOnJoinPlugin(bot))

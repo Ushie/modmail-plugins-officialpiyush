@@ -40,5 +40,5 @@ class RebootCog(commands.Cog):
         os.execl(sys.executable, sys.executable, * sys.argv)
 
 
-def setup(bot):
-    bot.add_cog(RebootCog(bot))
+async def setup(bot):
+    await bot.add_cog(RebootCog(bot))

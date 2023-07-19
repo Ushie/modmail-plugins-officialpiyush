@@ -301,5 +301,5 @@ class MusicPlugin(commands.Cog):
                 raise commands.CommandInvokeError("You need to be in my voicechannel.")
 
 
-def setup(bot):
-    bot.add_cog(MusicPlugin(bot))
+async def setup(bot):
+    await bot.add_cog(MusicPlugin(bot))

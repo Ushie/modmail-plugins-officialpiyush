@@ -268,5 +268,5 @@ class Starboard(commands.Cog):
                     await msg.delete()
 
 
-def setup(bot):
-    bot.add_cog(Starboard(bot))
+async def setup(bot):
+    await bot.add_cog(Starboard(bot))

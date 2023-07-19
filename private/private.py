@@ -689,7 +689,7 @@ class PrivatePlugins(commands.Cog):
         await paginator.run()
 
 
-def setup(bot):
+async def setup(bot):
     if "Plugins" in bot.cogs:
-        bot.remove_cog("Plugins")
-    bot.add_cog(PrivatePlugins(bot))
+        await bot.remove_cog("Plugins")
+    await bot.add_cog(PrivatePlugins(bot))

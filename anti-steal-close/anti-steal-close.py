@@ -100,5 +100,5 @@ class AntiStealClosePlugin(commands.Cog):
             await channel.send(embed)
 
 
-def setup(bot):
-    bot.add_cog(AntiStealClosePlugin(bot))
+async def setup(bot):
+    await bot.add_cog(AntiStealClosePlugin(bot))

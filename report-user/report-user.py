@@ -214,5 +214,5 @@ class ReportUser(commands.Cog):
         return
 
 
-def setup(bot):
-    bot.add_cog(ReportUser(bot))
+async def setup(bot):
+    await bot.add_cog(ReportUser(bot))

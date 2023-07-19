@@ -49,5 +49,5 @@ class TopicFixPlugin(commands.Cog):
             print("Posted to Plugin API")
 
 
-def setup(bot):
-    bot.add_cog(TopicFixPlugin(bot))
+async def setup(bot):
+    await bot.add_cog(TopicFixPlugin(bot))

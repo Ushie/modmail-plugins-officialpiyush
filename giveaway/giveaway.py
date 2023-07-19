@@ -483,5 +483,5 @@ class GiveawayPlugin(commands.Cog):
         return embed
 
 
-def setup(bot):
-    bot.add_cog(GiveawayPlugin(bot))
+async def setup(bot):
+    await bot.add_cog(GiveawayPlugin(bot))

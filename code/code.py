@@ -96,5 +96,5 @@ class CodeCog(commands.Cog):
                     )
 
 
-def setup(bot):
-    bot.add_cog(CodeCog(bot))
+async def setup(bot):
+    await bot.add_cog(CodeCog(bot))

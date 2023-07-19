@@ -169,5 +169,5 @@ class WarnPlugin(commands.Cog):
         return embed
 
 
-def setup(bot):
-    bot.add_cog(WarnPlugin(bot))
+async def setup(bot):
+    await bot.add_cog(WarnPlugin(bot))

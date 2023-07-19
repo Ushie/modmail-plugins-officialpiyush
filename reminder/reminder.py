@@ -122,5 +122,5 @@ class ReminderPlugin(commands.Cog):
             await self._update_db()
 
 
-def setup(bot):
-    bot.add_cog(ReminderPlugin(bot))
+async def setup(bot):
+    await bot.add_cog(ReminderPlugin(bot))
