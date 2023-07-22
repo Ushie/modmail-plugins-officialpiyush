@@ -232,7 +232,7 @@ class Starboard(commands.Cog):
                     )
                     embed.set_author(
                         name=str(message.author),
-                        icon_url=message.author.avatar_url,
+                        icon_url=message.author.display_avatar,
                     )
                     embed.set_footer(text=f"⭐ {count} | {payload.message_id}")
                     if len(message.attachments) > 1:

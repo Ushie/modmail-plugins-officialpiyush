@@ -254,7 +254,7 @@ class ModerationPlugin(commands.Cog):
 
         embed.set_author(
             name=f"Pardon | {member}",
-            icon_url=member.avatar_url,
+            icon_url=member.display_avatar,
         )
         embed.add_field(name="User", value=f"{member}")
         embed.add_field(
@@ -274,7 +274,7 @@ class ModerationPlugin(commands.Cog):
 
         embed.set_author(
             name=f"Warn | {member}",
-            icon_url=member.avatar_url,
+            icon_url=member.display_avatar,
         )
         embed.add_field(name="User", value=f"{member}")
         embed.add_field(name="Moderator", value=f"<@{modid}>` - ({mod})`")

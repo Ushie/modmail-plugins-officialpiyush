@@ -116,7 +116,7 @@ class ReportUser(commands.Cog):
             )
             embed.set_author(
                 name=f"{ctx.author.name}#{ctx.author.discriminator}",
-                icon_url=ctx.author.avatar_url,
+                icon_url=ctx.author.display_avatar,
             )
             embed.title = "User Report"
             embed.add_field(

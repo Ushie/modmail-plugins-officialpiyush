@@ -78,7 +78,7 @@ class Polls(commands.Cog):
             timestamp=datetime.datetime.utcnow(),
             description=f"**{question}**\n{answer}",
         )
-        embed.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
+        embed.set_author(name=ctx.author, icon_url=ctx.author.display_avatar)
         poll = await ctx.send(embed=embed)
         for emoji, _ in answers:
             await poll.add_reaction(emoji)
@@ -120,7 +120,7 @@ class Polls(commands.Cog):
             embed = discord.Embed(
                 color=self.bot.main_color, description=f"**{question}**"
             )
-            embed.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
+            embed.set_author(name=ctx.author, icon_url=ctx.author.display_avatar)
             poll = await ctx.send(embed=embed)
             reactions = ["👍", "👎"]
             for emoji in reactions:
@@ -137,7 +137,7 @@ class Polls(commands.Cog):
                 timestamp=datetime.datetime.utcnow(),
                 description=f"**{question}**\n{body}",
             )
-            embed.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
+            embed.set_author(name=ctx.author, icon_url=ctx.author.display_avatar)
             poll = await ctx.send(embed=embed)
             for emoji, _ in choices:
                 await poll.add_reaction(emoji)
