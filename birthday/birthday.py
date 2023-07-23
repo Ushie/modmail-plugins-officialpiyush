@@ -7,7 +7,6 @@ import pytz
 from difflib import get_close_matches
 from discord.ext import commands
 from pytz import timezone
-
 from core import checks
 from core.models import PermissionLevel
 
@@ -173,7 +172,7 @@ class BirthdayPlugin(commands.Cog):
 
             self.birthdays[str(ctx.author.id)] = birthday_obj
             await self._update_birthdays()
-            await ctx.send(f"Done! You'r birthday was set to {date}")
+            await ctx.send(f"Done! Your birthday was set to {date}")
             return
         except KeyError:
             logger.info(birthday[0])
